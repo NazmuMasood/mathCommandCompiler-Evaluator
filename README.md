@@ -6,14 +6,14 @@ mathCommandCompiler-Evaluator is a mathematical command compiler and expression 
 
 ## General view
 ```
- Input:
+ INPUT:
  int a=3, b=5,c=2;
  int d=a/b;
  b=b-1;
  double n1=13.2;
  double val=b^3+(17%a-5)*4-(b/c+2.5*(n1-b));
  
- Output:
+ OUTPUT:
  a=3
  b=4
  c=2
@@ -29,7 +29,7 @@ mathCommandCompiler-Evaluator is a mathematical command compiler and expression 
  compilation error. In case of error found in the expression of a variable, it designates "Compilation error"
  to that variable's value.  
 ``` 
- Input:
+ INPUT:
  int a=3, b=5,c=2;
  int d=a*(b-c)^2;
  int e=a/b;
@@ -38,7 +38,7 @@ mathCommandCompiler-Evaluator is a mathematical command compiler and expression 
  double n1=13.2;
  double val=b^3+(17%a-5)*4-(b/c+2.5*(n1-b));
  
- Output:
+ OUTPUT:
  a=3 
  b=4 
  c=2 
@@ -47,32 +47,32 @@ mathCommandCompiler-Evaluator is a mathematical command compiler and expression 
  n1=13.2 
  val=27.0 
  ------
- Input:
+ INPUT:
  int a=3, b=5,c=2;
  
  b=b-1+u;
  double n1=13.2;
  double val=b^3+(17%a-5)*4-(b/c+2.5*(n1-b));
  
- Output:
+ OUTPUT:
  a=3 
  b=Compilation error 
  c=2 
  n1=13.2 
  val=Compilation error
  ------
- Input:
+ INPUT:
  int a=3, b=5,c=2;
  int a=10;
  
- Output:
+ OUTPUT:
  Duplicate variable found !!! Please try again...
  ------
- Input:
+ INPUT:
  int a=3, b=5,c=2;
  u=10;
  
- Output:
+ OUTPUT:
  Uninitialized variable found !!! Please try again... 
 ``` 
 ### Supported Operators
