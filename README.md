@@ -27,7 +27,7 @@ mathCommandCompiler-Evaluator is a mathematical command compiler and expression 
  i.e. 'integer' or 'double' are initialized and updated. The program returns the final value of all the 
  legitimate/recognized variables. If unknown/illegal input statement is found, it shows respective 
  compilation error. In case of error found in the expression of a variable, it designates "Compilation error"
- to that variable's value.  
+ to that variable's value. Some sample inputs and outputs are given below for better understanding:
 ``` 
  INPUT:
  int a=3, b=5,c=2;
