@@ -89,7 +89,7 @@ mathCommandCompiler-Evaluator is a mathematical command compiler and expression 
 
 ## About used algorithm
  *The approach explained :*
- Initially variables' names,data types and values are stored in three different arrays who have 1-to-1
+ Initially variables' names,data types and values are stored in three different arrays who have 1-to-1 mapping
  between themselves. If values aren't directly given in input, then assumes the value to be '0'. Then whenever
  there's an expression found for the variable or a variable is updated, it adds the variable's index number
  to the 'work sequence'. It also saves the expression in the 'expression sequence'. The 'work sequence' and 
