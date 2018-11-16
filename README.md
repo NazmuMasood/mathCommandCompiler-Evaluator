@@ -75,18 +75,6 @@ mathCommandCompiler-Evaluator is a mathematical command compiler and expression 
  OUTPUT:
  Uninitialized variable found !!! Please try again... 
 ``` 
-### Supported Operators
-<table>
-  <tr><th>Mathematical Operators</th></tr>
-  <tr><th>Operator</th><th>Description</th></tr>
-  <tr><td>+</td><td>Additive operator</td></tr>
-  <tr><td>-</td><td>Subtraction</td></tr>
-  <tr><td>*</td><td>Multiplication operator</td></tr>
-  <tr><td>/</td><td>Division operator</td></tr>
-  <tr><td>%</td><td>Modulus operator</td></tr>
-  <tr><td>^</td><td>Power operator</td></tr>
-</table>
-
 ## About used algorithm
  *The approach explained :*
  Initially variables' names,data types and values are stored in three different arrays who have 1-to-1 mapping
@@ -138,7 +126,17 @@ mathCommandCompiler-Evaluator is a mathematical command compiler and expression 
  - apply the operator to the two operands
  - push the result onto the stack
  - when the expression has been exhausted the result is the top (and only element) of the stack
-
+### Supported Operators
+<table>
+  <tr><th>Mathematical Operators</th></tr>
+  <tr><th>Operator</th><th>Description</th></tr>
+  <tr><td>+</td><td>Additive operator</td></tr>
+  <tr><td>-</td><td>Subtraction</td></tr>
+  <tr><td>*</td><td>Multiplication operator</td></tr>
+  <tr><td>/</td><td>Division operator</td></tr>
+  <tr><td>%</td><td>Modulus operator</td></tr>
+  <tr><td>^</td><td>Power operator</td></tr>
+</table>
 ### Notes
 ```
 !!!The program supports only 'int' and 'double' data types
