@@ -126,6 +126,7 @@ mathCommandCompiler-Evaluator is a mathematical command compiler and expression 
  - apply the operator to the two operands
  - push the result onto the stack
  - when the expression has been exhausted the result is the top (and only element) of the stack
+ 
 ### Supported Operators
 <table>
   <tr><th>Mathematical Operators</th></tr>
@@ -137,6 +138,7 @@ mathCommandCompiler-Evaluator is a mathematical command compiler and expression 
   <tr><td>%</td><td>Modulus operator</td></tr>
   <tr><td>^</td><td>Power operator</td></tr>
 </table>
+
 ### Notes
 ```
 !!!The program supports only 'int' and 'double' data types
