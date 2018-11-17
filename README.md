@@ -77,12 +77,13 @@ mathCommandCompiler-Evaluator is a mathematical command compiler and expression 
 ``` 
 ## About used algorithm
  *The approach explained :*
- Initially variables' names,data types and values are stored in three different arrays who have 1-to-1 mapping
- between themselves. If values aren't directly given in input, then assumes the value to be '0'. Then whenever
- there's an expression found for the variable or a variable is updated, it adds the variable's index number
- to the 'work sequence'. It also saves the expression in the 'expression sequence'. The 'work sequence' and 
- the 'expression sequence' has 1-to-1 mapping between them. Finally, the program executes the work sequence
- one by one and the final values of variables are updated.
+ Initially variables' names,data types and values are stored in three different arrayLists('var','intDoubChk','num') 
+ who have 1-to-1 mapping between themselves. If values aren't directly given in input, then assumes the value
+ to be '0'. Then whenever there's an expression found for the variable or a variable is updated, it adds the 
+ variable's index number to the arrayList 'work sequence'. It also saves the expression in another arrayList 
+ 'expression sequence'. The 'work sequence' and the 'expression sequence' also has 1-to-1 mapping between them. 
+ Finally, the program executes the work sequence one by one i.e. works with the variable and it's given expression
+ and the final values of variables are updated.
  <br>Input statements~>
 ```
  int a=3, b=5,c=2;
@@ -94,15 +95,22 @@ mathCommandCompiler-Evaluator is a mathematical command compiler and expression 
 ```
 <br>Visualization of the approach~>
 ``` 
+ -(initially)-
  Identifiers :  
  a         b          c             d             e             n1                 val                     
  int       int        int           int           int           double             double                   
  3         5          2             0             0             13.2               0.0                     
  work sequence : 3  4  1  6   
  expression sequence : a*(b-c)^2  a/b  b-1  b^3+(17%a-5)*4-(b/c+2.5*(n1-b))
+ 
+ -(finally after executing the work sequence and updating values)-
+ Identifiers :  
+ a         b          c             d             e             n1                 val                     
+ int       int        int           int           int           double             double                   
+ 3         4          2             27            0             13.2               27.0                     
 ``` 
  *The algorithm used for getting postfix notation from infix notation :*
- <br>When a infix expression is given -->
+ <br>When an infix expression is given -->
  <br>1. Examine the next element in the input.
  <br>2. If it is operand, output it.
  <br>3.  If it is opening parenthesis, push it on stack.
