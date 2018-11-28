@@ -48,8 +48,7 @@ mathCommandCompiler-Evaluator is a mathematical command compiler and expression 
  val=27.0 
  ------
  INPUT:
- int b=5;
- 
+ int b=5; 
  b=b-1+u;
  double val=b^3
  
