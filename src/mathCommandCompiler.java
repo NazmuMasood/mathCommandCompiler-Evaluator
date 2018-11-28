@@ -94,17 +94,17 @@
  ***The algorithm used for getting postfix notation from infix notation
  --> when a infix expression is given
  1)Examine the next element in the input.
- 2)  If it is operand, output it.
- 3)  If it is opening parenthesis, push it on stack.
- 4)  If it is an operator, then
- i) If stack is empty, push operator on stack.
+ 2)Â Â If it is operand, output it.
+ 3)Â Â If it is opening parenthesis, push it on stack.
+ 4)Â Â If it is an operator, then
+ i)Â If stack is empty, push operator on stack.
  ii) If the top of stack is opening parenthesis, push operator on stack
- iii) If it has higher priority than the top of stack, push operator on stack.
- iv) Else pop the operator from the stack and output it, repeat step 4 
- 5)  If it is a closing parenthesis, pop operators from stack and output them until 
+ iii)Â If it has higher priority than the top of stack, push operator on stack.
+ iv)Â Else pop the operator from the stack and output it, repeat step 4 
+ 5)Â  If it is a closing parenthesis, pop operators from stack and output them until 
  an opening parenthesis is encountered. pop and discard the opening parenthesis.
- 6)  If there is more input go to step 1
- 7)  If there is no more input, pop the remaining operators to output.
+ 6)Â  If there is more input go to step 1
+ 7)Â  If there is no more input, pop the remaining operators to output.
  
  ***The algorithm used for calculating postfix expressions
  --> When a postfix expression is given
@@ -266,7 +266,8 @@ public class mathCommandCompiler{
       return 0;
     }
     
-    //checking for un-initialized variables
+    //checking for variables which are initialized but their values are 
+    //not 'defined' or explicitly mentioned i.e. 'int u;'
     if(s.matches("[a-zA-Z].*")){
       int count=0; int index=0;
       for(int i=0;i<var.size();i++){
