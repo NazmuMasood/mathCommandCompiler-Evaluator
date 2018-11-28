@@ -48,28 +48,24 @@ mathCommandCompiler-Evaluator is a mathematical command compiler and expression 
  val=27.0 
  ------
  INPUT:
- int a=3, b=5,c=2;
+ int b=5;
  
  b=b-1+u;
- double n1=13.2;
- double val=b^3+(17%a-5)*4-(b/c+2.5*(n1-b));
+ double val=b^3
  
  OUTPUT:
- a=3 
  b=Compilation error 
- c=2 
- n1=13.2 
  val=Compilation error
  ------
  INPUT:
- int a=3, b=5,c=2;
+ int a=3;
  int a=10;
  
  OUTPUT:
  Duplicate variable found !!! Please try again...
  ------
  INPUT:
- int a=3, b=5,c=2;
+ int a=3;
  u=10;
  
  OUTPUT:
