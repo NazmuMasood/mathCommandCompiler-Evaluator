@@ -5,3 +5,4 @@ int e=a/b;
 b=b-1;
 double n1=13.2;
 double val=b^3+(17%a-5)*4-(b/c+2.5*(n1-b));
+//yggygy
